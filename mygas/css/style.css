@@ -1,0 +1,22 @@
+body {
+  background-image: url(../img/preds1.jpeg);
+}
+
+#result {
+   margin-top: 30px;
+}
+
+#bg-best-price {
+    /*background-image: url(../img/gast.jpeg);*/
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    color: white;
+    font-weight: 600;
+}
+
+.hide {
+  display: none;
+}

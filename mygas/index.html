@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Best Price</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous"/>
+
+  </head>
+
+  <body>
+    <div id="bg-best-price" class="jumbotron text-center">
+      <h1>Best Price ⛽</h1>
+      <p>Descubra qual o melhor combustível colocar no seu carro.</p> 
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            </div>
+
+            <input
+              id="iptGasoline"
+              type="text"
+              class="form-control"
+              placeholder="Digite o valor da gasolina"
+            >
+          </div>
+        </div>
+
+        <div class="col-12 col-md-2">
+          <button
+            type="button"
+            class="btn btn-outline-success btn-lg p-2"
+            onclick="calculate()"
+          >
+            Calcular
+          </button>
+        </div>
+      </div>
+
+      <div id="result" class="media hide">
+        <div class="media-body">
+          <!--<b>Resultado: </b>-->
+          <span id="success" class="alert alert-warning"></span>
+          <span id="error" class="alert alert-danger"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"></script>
+  </body>
+</html>
